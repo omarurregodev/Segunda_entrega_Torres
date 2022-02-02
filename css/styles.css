@@ -48,6 +48,15 @@ body {
     background-color: #334257;
 }
 
+.nosotrosTitulo {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.nosotrosParrafo {
+    padding-top: 2vh;
+}
+
 .nosotrosSection {  
     display: flex;
     align-items: center;
@@ -68,10 +77,17 @@ body {
 
 .parrafoIconos {
     color:#EEEEEE;
+    padding-top: 1.5vh;
 }
 
 .serviciosBG {
     background-color: #334257;
+}
+
+.serviciosTitulo {
+    padding-bottom: 1vh;
+    width: max-content;
+    margin: 0 auto;
 }
 
 .serviciosSection {
@@ -164,7 +180,7 @@ body {
 }
 
 .formCostume {
-    padding-top: 20px;
+    padding-top: 5vh;
 }
 
 .centradoForm {
@@ -175,6 +191,8 @@ body {
 
 .tituloTrabaja {
     color: #EEEEEE;
+    width: max-content;
+    margin: 0 auto;
 }
 
 .form-label {
@@ -183,6 +201,8 @@ body {
 
 .tituloContacto {
     color: #EEEEEE;
+    width: max-content;
+    margin: 0 auto;
 }
 
 .formCostumeContacto {
@@ -199,4 +219,65 @@ body {
 .content {
     padding-top: 5vh;
     padding-bottom: 10vh;
+}
+
+/* ANIMACIONES, GRADIENTES Y TRANSFORMACIONES */
+
+.itemImg:hover {   
+    transform: scale(1.2) rotateY(180deg);
+    transition-duration: 3s;
+}
+
+.logoImg:hover {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+
+.nosotrosTitulo:hover {
+    animation: borderBottom 3s;
+    transform: scale(1.1);
+    transition-duration: 3s;
+}
+@keyframes borderBottom {
+    100% {
+        border-bottom: 2px solid #EEEEEE; 
+    }
+
+}
+
+.serviciosTitulo:hover {
+    animation: borderBottom 3s;
+    transform: scale(1.1);
+    transition-duration: 3s;
+}
+@keyframes borderBottom {
+    100% {
+        border-bottom: 2px solid #EEEEEE; 
+    }
+
+}
+
+
+.tituloTrabaja:hover {
+    animation: borderBottom 3s;
+    transform: scale(1.1);
+    transition-duration: 3s;
+}
+@keyframes borderBottom {
+    100% {
+        border-bottom: 2px solid #EEEEEE; 
+    }
+
+}
+
+.tituloContacto:hover {
+    animation: borderBottom 3s;
+    transform: scale(1.1);
+    transition-duration: 3s;
+}
+@keyframes borderBottom {
+    100% {
+        border-bottom: 2px solid #EEEEEE; 
+    }
+
 }
